@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HUB - Single Page Applications!</title>
+<style>
+    .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: center;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+    border-bottom: thin solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+</style>
+</head>
+<body>
+
+<div class="container2">
+        <h2>Single Page Applications</h2>
+        <p>The server returns one single, pre-generated HTML page which in turn contains JavaScript code that changes the page dynamically in the browser (this approach is known as a "Single Page Application" or "SPA")</p>
+        <picture>
+            <source srcset="spa.webp" type="image/webp">
+            <img src="spa.webp" style="max-width:20%">
+        </picture>
+        <h2>Static Pages</h2>
+        <p>HTML pages were pre-generated and are stored as such on the server - typically, those pages are not hand-written but also generated automatically (but before they're uploaded) with the help of a static site generator</p>
+        <picture>
+            <source srcset="static_page.webp" type="image/webp">
+            <img src="static_page.webp" style="max-width:20%">
+        </picture>
+    Más información: https://academind.com/tutorials/dynamic-vs-static-vs-spa#single-page-applications
+    </div>
+	
+    <div class="container">
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Tipo de p�gina</th>
+                    <th>Enlace</th>
+                    <th>Observaciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Javascript-SPA-Simple</td>
+                    <td>Single Page Application</td>
+                    <td><p>Check out <a href="http://40.117.91.216:9000" target="_blank" rel="noopener noreferrer">page</a>.</p></td>
+                    <td></td>
+                </tr>
+                <tr class="active-row">
+                    <td>Instagram Clone - Simple</td>
+                    <td>Por determinar</td>
+                    <td><p>Check out <a href="http://40.117.91.216:3000" target="_blank" rel="noopener noreferrer">page</a>.</p></td>
+                    <td>User: test@test.com  Pass: test</td>
+                </tr>
+                <tr class="active-row">
+                    <td>Demo Olimpia</td>
+                    <td>Static Page</td>
+                    <td><p>Check out <a href="http://nunforest.com/olimpia/olimpia-demo/index.html" target="_blank" rel="noopener noreferrer">page</a>.</p></td>
+                    <td></td>
+                </tr>
+                <tr class="active-row">
+                    <td>Kit's Garden</td>
+                    <td>Single Page Application</td>
+                    <td><p>Check out <a href="https://gardenserver-d4079.web.app/home" target="_blank" rel="noopener noreferrer">page</a>.</p></td>
+                    <td></td>
+                </tr>
+                <tr class="active-row">
+                    <td>Remi Gets A Smartphone</td>
+                    <td>Single Page Application</td>
+                    <td><p>Check out <a href="https://remiserver-7e67c.web.app/home" target="_blank" rel="noopener noreferrer">page</a>.</p></td>
+                    <td></td>
+                </tr>
+                <!-- and so on... -->
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
